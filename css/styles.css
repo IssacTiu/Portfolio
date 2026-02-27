@@ -33,16 +33,27 @@ img {
 }
 
 #header {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
-    padding: 10px;
+    align-items: center;
+    margin: 0;
+    padding: 20px 50px;
 }
 
 #header a {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: inline-block;
+    font-size: 20px;
     color: rgb(255, 249, 218);
     text-decoration: none;
+    padding: 10px 20px;
+}
+
+#header a:hover {
+    color: #6518b7;
 }
 
 model-viewer {
@@ -88,5 +99,4 @@ model-viewer {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+  background-color: rgba(0,0,0,0
