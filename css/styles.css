@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 249, 218);
+}
+
+img {
+    max-width: 100%;
+}
+
+.media-type {
+    text-align: center;
+    padding: 20px;
+}
+
+.media-button {
+    background-color: #6518b7;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#header {
+    list-style-type: none;
+    padding: 10px;
+}
+
+#header a {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: rgb(255, 249, 218);
+    text-decoration: none;
+}
+
+model-viewer {
+    background-color: #5e5e5e;
+    width: 50vw;
+    height: 600px;
+    margin: auto auto;
+}
+
+/* Slideshow container */
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slide {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(255, 249, 218);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
