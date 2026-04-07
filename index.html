@@ -1,30 +1,83 @@
 <!DOCTYPE html>
 
-<html>
+<html id="html">
 
 <head>
     <meta charset="UTF-8">
     <title>Issac Tiu</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/Logo.png">
 </head>
 
-<body>
-    <h1>Issac Tiu</h1>
+<body onload="changeBackgroundColor()">
+    <header>
+        <img id="logo" src="images/Logo.png" alt="Logo">
+        <h1>Issac Tiu</h1>
+    </header>
     <main>
-        <div id="image">
-
-        </div>
         <ul id="header">
-            <li><a href="#">About Me</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
             <li><a href="2D.html">2D</a></li>
             <li><a href="3D.html">3D</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contacts.html">Contact</a></li>
         </ul>
+
+        <div class="section">
+            <div class="text">
+                <h2>3D Modeller</h2>
+                <ul>
+                    <li>Primary Tool: Blender</li>
+                    <li>Created a variety of models from characters to environments</li>
+                    <li>Experienced in texturing, rigging, compositing and animating all on the same platform</li>
+                </ul>
+            </div>
+            <img src="images/dino.jpg" alt="CRT scene">
+        </div>
+
+        <div class="section" id="reverse">
+            <div class="text">
+                <h2>Graphics Designer</h2>
+                <ul>
+                    <li>Primary Tool: Adobe Products (Illustrator, Photoshop, InDesign)</li>
+                    <li>Created many edits with a focus on a non-photorealistic style</li>
+                    <li>Combined 2D and 3D elements to create unique visual experiences</li>
+                </ul>
+            </div>
+            <img src="images/Atlas.png" alt="Atlas scene">
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <h2>Game Designer</h2>
+                <ul>
+                    <li>Primary Tool: Dreams</li>
+                    <li>Designed prototypes of characters and game mechanics as a hobby</li>
+                    <li>Working on applying techniques and skills developed here into more industry-level platforms</li>
+                </ul>
+                <a class="media-button" href="https://indreams.me/magickingv">Dreams Profile</a>
+            </div>
+            <img src="images/19d5588479b50-screenshotUrl.jpg" alt="Business Card">
+        </div>
+
+        <div class="section"  id="reverse">
+            <div class="text">
+                <h2>Contact Me</h2>
+                <p>Lets connect! I'm always open to discussing new projects, creative ideas, or opportunities to collaborate.</p>
+                <a class="media-button" href="contacts.html">Reach Out</a>
+            </div>
+            <img src="images/business_card_5.png" alt="Business Card">
+        </div>
+
     </main>
 
     <footer>
-        <p>issac.tiu@outlook.com</p>
+        <p id="quote">- Hard Edges, Flat Palates -</p>
+        <a href="mailto:issac.tiu@outlook.com">issac.tiu@outlook.com</a>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="java/script.js"></script>
+
 </body>
 
 </html>
