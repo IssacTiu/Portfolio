@@ -21,6 +21,11 @@ img {
     src: url('../fonts/PixelifySans-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "Lower Pixel";
+    src: url('../fonts/LowresPixel-Regular.otf') format('opentype');
+}
+
 /* Background */
 html {
     margin: 0;
@@ -38,7 +43,7 @@ body {
     border-radius: 10px;
     color: rgb(255, 249, 218);
     padding: 50px;
-    font-family: "Pixelify Sans";
+    font-family: "Lower Pixel", sans-serif;
     margin: 50px;
 }
 
@@ -169,6 +174,7 @@ h1 {
 
 .column img {
     margin-top: 8px;
+    border-radius: 10px;
     vertical-align: middle;
     width: 100%;
 }
@@ -211,6 +217,7 @@ model-viewer {
     width: 50vw;
     height: 50vh;
     margin: auto auto;
+    border-radius: 10px;
 }
 
 .slideshow {
@@ -283,10 +290,6 @@ model-viewer {
     height: auto;
     border-radius: 10px;
 }
-
-/* Contact Form */
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /** Base **/
 
