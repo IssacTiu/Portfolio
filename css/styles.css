@@ -78,9 +78,11 @@ h1 {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -132,7 +134,7 @@ h1 {
     flex-direction: row-reverse;
 }
 
-#reverse .text{
+#reverse .text {
     text-align: right;
     margin-left: 20px;
 }
@@ -152,7 +154,8 @@ h1 {
     font-size: 3vw;
 }
 
-.section ul, .section p {
+.section ul,
+.section p {
     font-size: 2.5vw;
     padding: 0 20px;
 }
@@ -177,6 +180,22 @@ h1 {
     border-radius: 10px;
     vertical-align: middle;
     width: 100%;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.image-container p {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
 }
 
 @media screen and (max-width: 800px) {
@@ -259,7 +278,7 @@ model-viewer {
     padding: 16px;
     color: rgb(255, 249, 218);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 200%;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -316,107 +335,107 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-variation-settings: inherit;
-  font-size: 100%;
-  font-weight: inherit;
-  line-height: inherit;
-  margin: 0;
-  padding: 0;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 [type="checkbox"],
 [type="radio"],
 [type="range"] {
-  appearance: none;
-  flex-shrink: 0;
-  padding: 0;
-  user-select: none;
+    appearance: none;
+    flex-shrink: 0;
+    padding: 0;
+    user-select: none;
 }
 
 [type="checkbox"]:focus,
 [type="radio"]:focus,
 [type="range"]:focus {
-  outline: none;
+    outline: none;
 }
 
 /** Components **/
 
 .fs-form {
-  display: grid;
-  row-gap: 1.5rem;
+    display: grid;
+    row-gap: 1.5rem;
 }
 
 .fs-form:where(.fs-layout__2-column) {
-  column-gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 fieldset {
-  display: grid;
-  margin: 1.5rem 0;
-  row-gap: 1.5rem;
+    display: grid;
+    margin: 1.5rem 0;
+    row-gap: 1.5rem;
 }
 
 .fs-form:where(.fs-layout__2-column) fieldset {
-  column-gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
-  grid-column: 1 / -1;
+    column-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / -1;
 }
 
 .fs-field {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.375rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.375rem;
 }
 
 .fs-button-group {
-  display: flex;
-  flex-direction: row-reverse;
-  column-gap: 1.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 1.5rem;
 }
 
 .fs-form:where(.fs-layout__2-column) .fs-button-group {
-  grid-column: 1 / -1;
+    grid-column: 1 / -1;
 }
 
 .fs-button {
-  border-radius: 0.375rem;
-  cursor: pointer;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  padding: 1rem 2rem;
-  transition-duration: 200ms;
-  transition-property: background-color;
-  color: black;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    padding: 1rem 2rem;
+    transition-duration: 200ms;
+    transition-property: background-color;
+    color: black;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fs-input,
 .fs-select {
-  appearance: none;
-  border-radius: 0.375rem;
-  border-width: 0;
-  color: black;
-  font-size: 1rem;
-  height: 2.5rem;
-  line-height: 1.5rem;
-  outline: none;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+    appearance: none;
+    border-radius: 0.375rem;
+    border-width: 0;
+    color: black;
+    font-size: 1rem;
+    height: 2.5rem;
+    line-height: 1.5rem;
+    outline: none;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 }
 
 .fs-textarea {
-  appearance: none;
-  border-radius: 0.375rem;
-  border-width: 0;
-  color: black;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  outline: none;
-  padding: 0.5rem 0.75rem;
-  resize: vertical;
+    appearance: none;
+    border-radius: 0.375rem;
+    border-width: 0;
+    color: black;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    outline: none;
+    padding: 0.5rem 0.75rem;
+    resize: vertical;
 }
 
 /* Footer */
